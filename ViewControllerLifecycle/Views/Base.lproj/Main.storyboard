@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--First-->
         <scene sceneID="EkI-JN-077">
             <objects>
-                <tableViewController id="uRW-jP-IlL" sceneMemberID="viewController">
+                <tableViewController id="uRW-jP-IlL" customClass="FirstTableTableViewController" customModule="ViewControllerLifecycle" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="SYV-c9-FMt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,16 +46,16 @@
                             <outlet property="delegate" destination="uRW-jP-IlL" id="HDg-s5-cnL"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="27g-Vp-7aD"/>
+                    <navigationItem key="navigationItem" title="First" largeTitleDisplayMode="always" id="27g-Vp-7aD"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ho7-Jl-1k8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-238" y="90"/>
         </scene>
-        <!--View Controller-->
+        <!--Second-->
         <scene sceneID="Yf8-Em-Ga3">
             <objects>
-                <viewController id="89q-as-3lk" sceneMemberID="viewController">
+                <viewController id="89q-as-3lk" customClass="SecondViewController" customModule="ViewControllerLifecycle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="11U-WY-cA2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,16 +75,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hpa-tg-KYq"/>
                     </view>
-                    <navigationItem key="navigationItem" id="AwI-PH-HIe"/>
+                    <navigationItem key="navigationItem" title="Second" largeTitleDisplayMode="always" id="AwI-PH-HIe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SMl-HN-gGo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="530" y="90"/>
         </scene>
-        <!--View Controller-->
+        <!--Third-->
         <scene sceneID="KZ6-0i-BZc">
             <objects>
-                <viewController id="p22-PX-rXP" sceneMemberID="viewController">
+                <viewController id="p22-PX-rXP" customClass="ThirdViewController" customModule="ViewControllerLifecycle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OR0-17-xRd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,7 +103,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2EH-gu-UXe"/>
                     </view>
-                    <navigationItem key="navigationItem" id="4XL-wr-gK4"/>
+                    <navigationItem key="navigationItem" title="Third" largeTitleDisplayMode="always" id="4XL-wr-gK4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nzL-5q-erx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
