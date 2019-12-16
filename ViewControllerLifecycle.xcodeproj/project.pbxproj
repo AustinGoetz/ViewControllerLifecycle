@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2AF6E1A323A823150036A508 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF6E1A223A823150036A508 /* AppDelegate.swift */; };
 		2AF6E1A523A823150036A508 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF6E1A423A823150036A508 /* SceneDelegate.swift */; };
-		2AF6E1A723A823150036A508 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF6E1A623A823150036A508 /* ViewController.swift */; };
 		2AF6E1AA23A823150036A508 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AF6E1A823A823150036A508 /* Main.storyboard */; };
 		2AF6E1AC23A823170036A508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AF6E1AB23A823170036A508 /* Assets.xcassets */; };
 		2AF6E1AF23A823170036A508 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AF6E1AD23A823170036A508 /* LaunchScreen.storyboard */; };
@@ -19,7 +18,6 @@
 		2AF6E19F23A823150036A508 /* ViewControllerLifecycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewControllerLifecycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AF6E1A223A823150036A508 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AF6E1A423A823150036A508 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2AF6E1A623A823150036A508 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2AF6E1A923A823150036A508 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2AF6E1AB23A823170036A508 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AF6E1AE23A823170036A508 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +54,30 @@
 		2AF6E1A123A823150036A508 /* ViewControllerLifecycle */ = {
 			isa = PBXGroup;
 			children = (
+				2AF6E1B723A823DF0036A508 /* Views */,
+				2AF6E1B623A823CF0036A508 /* Resources */,
+			);
+			path = ViewControllerLifecycle;
+			sourceTree = "<group>";
+		};
+		2AF6E1B623A823CF0036A508 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				2AF6E1A223A823150036A508 /* AppDelegate.swift */,
 				2AF6E1A423A823150036A508 /* SceneDelegate.swift */,
-				2AF6E1A623A823150036A508 /* ViewController.swift */,
-				2AF6E1A823A823150036A508 /* Main.storyboard */,
 				2AF6E1AB23A823170036A508 /* Assets.xcassets */,
 				2AF6E1AD23A823170036A508 /* LaunchScreen.storyboard */,
 				2AF6E1B023A823170036A508 /* Info.plist */,
 			);
-			path = ViewControllerLifecycle;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2AF6E1B723A823DF0036A508 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2AF6E1A823A823150036A508 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +151,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AF6E1A723A823150036A508 /* ViewController.swift in Sources */,
 				2AF6E1A323A823150036A508 /* AppDelegate.swift in Sources */,
 				2AF6E1A523A823150036A508 /* SceneDelegate.swift in Sources */,
 			);
@@ -286,7 +298,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G359J97949;
-				INFOPLIST_FILE = ViewControllerLifecycle/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ViewControllerLifecycle/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +316,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G359J97949;
-				INFOPLIST_FILE = ViewControllerLifecycle/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ViewControllerLifecycle/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
